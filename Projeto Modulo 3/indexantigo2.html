@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AmoFilmes - Opnião do Usuário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Sua Opnião</h2>
+        <form name="form1" method="post" action="cinemaservlet" >
+            
+            Nome:
+            <input type="text" name="txtNome" />
+            <br/>
+            
+            
+            Idade:
+            <input type="text" name="txtIdade" />
+            <br/>
+            
+            Opiniao:
+            <select name="selOpiniao">
+                <option value="4">Otimo</option>
+                <option value="3">Bom</option>
+                <option value="2">Regular</option>
+                <option value="1">Ruim</option>
+                <option value="0">Pessimo</option>
+            </select>
+            <br/>            
+            
+            <input type="submit" value="Confirmar" />
+            <input type="reset" value="Voltar" />
+            
+            <a href="resultadoservlet">Veja os resultados</a>
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>cinemaservlet</servlet-name>
+        <servlet-class>pacotecinema.cinemaservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>resultadoservlet</servlet-name>
+        <servlet-class>resultadoservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cinemaservlet</servlet-name>
+        <url-pattern>/cinemaservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>resultadoservlet</servlet-name>
+        <url-pattern>/resultadoservlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
